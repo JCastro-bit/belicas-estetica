@@ -1,0 +1,73 @@
+---
+// Hero.astro
+---
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-brand-dark pt-20 pb-16">
+  <!-- Dynamic Background elements -->
+  <div class="absolute top-1/4 left-1/4 w-[40vw] h-[40vw] max-w-xl max-h-xl bg-brand-fuchsia/20 rounded-full blur-[100px] -z-10 animate-pulse" style="animation-duration: 4s;"></div>
+  <div class="absolute bottom-1/4 right-1/4 w-[50vw] h-[50vw] max-w-2xl max-h-2xl bg-[#c026d3]/10 rounded-full blur-[120px] -z-10"></div>
+  
+  <div class="container mx-auto px-4 relative z-10 text-center flex flex-col items-center">
+    
+    <!-- Badge -->
+    <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-brand-fuchsia/40 bg-brand-darker/60 backdrop-blur-md mb-8 md:mb-12 animate-fade-in-up" style="animation-duration: 0.8s;">
+      <div class="flex items-center text-brand-fuchsia">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+        <span class="ml-2 font-black text-sm md:text-base tracking-widest text-white mt-[2px]">4.8</span>
+      </div>
+      <div class="w-px h-4 bg-white/20"></div>
+      <span class="text-white/70 text-xs md:text-sm uppercase tracking-[0.2em] font-medium mt-[2px]">128 RESEÑAS</span>
+    </div>
+
+    <!-- Main Typography -->
+    <div class="relative w-full max-w-7xl mx-auto flex flex-col items-center justify-center -space-y-4 md:-space-y-12">
+      <h1 class="font-display text-[16vw] md:text-[160px] lg:text-[220px] xl:text-[260px] leading-[0.8] tracking-tighter text-white uppercase z-10 animate-fade-in-up md:px-4 drop-shadow-2xl" style="animation-duration: 1.2s;">
+        BELICA'S
+      </h1>
+      
+      <!-- Overlapping Subtext -->
+      <div class="relative z-20 animate-fade-in-up" style="animation-duration: 1.4s; animation-delay: 0.2s;">
+        <h2 class="font-display text-[10vw] md:text-[90px] lg:text-[130px] xl:text-[150px] leading-[0.8] tracking-tight text-outline-fuchsia uppercase glow-fuchsia">
+          ESTÉTICA
+        </h2>
+      </div>
+    </div>
+
+    <!-- Subtitle -->
+    <p class="mt-8 md:mt-16 text-lg md:text-2xl lg:text-3xl text-gray-300 font-body max-w-2xl mx-auto tracking-[0.1em] font-light animate-fade-in-up uppercase" style="animation-duration: 1s; animation-delay: 0.6s;">
+      Donde tu belleza brilla <span class="text-brand-fuchsia mx-3 md:mx-4 font-bold text-2xl md:text-3xl align-middle shadow-brand-fuchsia drop-shadow-lg">•</span> Guadalajara
+    </p>
+
+    <!-- CTA Container -->
+    <div class="mt-12 md:mt-20 relative group animate-fade-in-up" style="animation-duration: 1s; animation-delay: 0.8s;">
+      <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-fuchsia to-fuchsia-600 rounded-lg blur-md opacity-70 group-hover:opacity-100 transition duration-500 group-hover:duration-200"></div>
+      <a href="https://wa.me/523333986710?text=Hola,%20quiero%20agendar%20en%20Belica's" target="_blank" rel="noopener noreferrer" class="relative inline-flex items-center justify-center px-8 py-5 md:px-12 md:py-6 bg-brand-darker border border-brand-fuchsia/50 text-white font-display text-xl md:text-3xl uppercase tracking-widest hover:bg-brand-fuchsia hover:border-transparent transition-all duration-300 transform group-hover:-translate-y-1">
+        Agenda tu cita
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 md:w-8 md:h-8 ml-4 group-hover:translate-x-2 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Decorative Marquee or aggressive aesthetic line -->
+  <div class="absolute bottom-0 left-0 w-full overflow-hidden whitespace-nowrap border-y border-white/10 bg-black/40 backdrop-blur-sm py-4 z-20 flex">
+    <div class="animate-marquee inline-block font-display text-2xl md:text-4xl tracking-widest text-transparent" style="-webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);">
+      AQUÍ SE HACEN TRANSFORMACIONES, NO SOLO CORTES <span class="text-brand-fuchsia/50 mx-4" style="-webkit-text-stroke:0">✦</span> 
+      AQUÍ SE HACEN TRANSFORMACIONES, NO SOLO CORTES <span class="text-brand-fuchsia/50 mx-4" style="-webkit-text-stroke:0">✦</span> 
+      AQUÍ SE HACEN TRANSFORMACIONES, NO SOLO CORTES <span class="text-brand-fuchsia/50 mx-4" style="-webkit-text-stroke:0">✦</span> 
+      AQUÍ SE HACEN TRANSFORMACIONES, NO SOLO CORTES <span class="text-brand-fuchsia/50 mx-4" style="-webkit-text-stroke:0">✦</span>
+    </div>
+    <!-- Duplicate for seamless loop -->
+    <div class="animate-marquee inline-block font-display text-2xl md:text-4xl tracking-widest text-transparent absolute top-4" style="-webkit-text-stroke: 1px rgba(255, 255, 255, 0.4); left: 100%;">
+      AQUÍ SE HACEN TRANSFORMACIONES, NO SOLO CORTES <span class="text-brand-fuchsia/50 mx-4" style="-webkit-text-stroke:0">✦</span> 
+      AQUÍ SE HACEN TRANSFORMACIONES, NO SOLO CORTES <span class="text-brand-fuchsia/50 mx-4" style="-webkit-text-stroke:0">✦</span> 
+      AQUÍ SE HACEN TRANSFORMACIONES, NO SOLO CORTES <span class="text-brand-fuchsia/50 mx-4" style="-webkit-text-stroke:0">✦</span> 
+      AQUÍ SE HACEN TRANSFORMACIONES, NO SOLO CORTES <span class="text-brand-fuchsia/50 mx-4" style="-webkit-text-stroke:0">✦</span>
+    </div>
+  </div>
+</section>

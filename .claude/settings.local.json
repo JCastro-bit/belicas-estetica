@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /c/Users/javier_castro/Proyectos/Lovable/boiler-plate-astro-lead -maxdepth 3 -type f \\\\\\( -name \"*.json\" -o -name \"*.md\" \\\\\\) 2>/dev/null | head -30)",
+      "Bash(npx claude-code-templates@latest --skill creative-design/frontend-design 2>&1)",
+      "Bash(npm install:*)",
+      "Bash(cd C:/Users/javier_castro/Proyectos/Lovable/boiler-plate-astro-lead && node -e \"require.resolve\\('tailwindcss'\\)\" 2>&1 && echo \"tailwind module OK\" || echo \"tailwind module missing\")"
+    ]
+  }
+}
